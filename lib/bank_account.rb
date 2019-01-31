@@ -7,7 +7,7 @@ class BankAccount
   def initialize(name)
     @name = name
     @balance = 1000
-    @status = "open"
+    self.status = "open"
   end
 
   def deposit(money_paid)
@@ -23,7 +23,7 @@ class BankAccount
   end
 
   def close_account
-    self.status = "closed"
+    @status = "closed"
   end
 
 end
